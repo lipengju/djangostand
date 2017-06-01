@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% block footer %}
+	{% if now %}
+	<p style="font-family: 华文行楷">现在时刻：{{now}}</p>
+	{% else %}
+	<p style="font-family: 微软雅黑">本博客内容都是原创,如引用请通知本人,谢谢您！！！</p>
+	{% endif %}
+{% endblock %}
